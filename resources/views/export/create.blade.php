@@ -42,11 +42,7 @@
                 </tbody>
             </table>
             <div class="mt-5 d-flex justify-content-end gap-2">
-                <form action="{{ route('export.destroy', $export) }}" method="POST" class="d-inline">
-                    @csrf
-                    @method('DELETE')
-                    <button type="button" class="btn btn-secondary" onclick="window.history.back();">Hủy</button>
-                </form>
+                <button type="button" class="btn btn-secondary" onclick="window.history.back();">Hủy</button>
                 <button type="submit" class="btn btn-primary">Lưu</button>   
             </div>
         </form>

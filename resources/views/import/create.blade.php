@@ -13,7 +13,7 @@
     </div>
 
     <div class="card-body">
-        <form action="{{ route('import.stockstore')}}" method="POST" id="stockForm">
+        <form action="{{ route('import.stockstore') }}" method="POST" id="stockForm">
             @csrf
             <input type="hidden"  name="import" value="{{$import}}" required>
             <table class="table table-bordered table-striped mt-4" id="dataTable">
@@ -45,11 +45,7 @@
                 </tbody>
             </table>
             <div class="mt-5 d-flex justify-content-end gap-2">
-                <form action="{{ route('import.destroy', $import) }}" method="POST" class="d-inline">
-                    @csrf
-                    @method('DELETE')
-                    <button type="button" class="btn btn-secondary" onclick="window.history.back();">Hủy</button>
-                </form>
+                <button type="button" class="btn btn-secondary" onclick="window.history.back();">Hủy</button>
                 <button type="submit" class="btn btn-primary">Lưu</button>   
             </div>
         </form>

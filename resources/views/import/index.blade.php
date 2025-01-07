@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-<h2>Quản lý giao dịch nhậpk kho</h2>
+<h2>Quản lý giao dịch nhập kho</h2>
 <div class="card mt-5">
     <div class="card-header d-grid gap-2 d-md-flex justify-content-md-end">
         <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#addModal">
